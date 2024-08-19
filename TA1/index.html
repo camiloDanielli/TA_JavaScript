@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulación de Cadenas y Arreglos</title>
+</head>
+<body>
+    <h1>Manipulación de Cadenas y Arreglos</h1>
+
+    <!-- Manipulación de Cadenas -->
+    <label for="textoRepetir">Texto a repetir:</label>
+    <input type="text" id="textoRepetir">
+    <label for="repeticiones">Número de repeticiones:</label>
+    <input type="number" id="repeticiones" min="1">
+    <button onclick="repeatString()">Repetir</button>
+    <br>
+    <!-- Procesamiento de Arreglos-->
+    
+    <label for="itemToRemove">Elemento a eliminar:</label>
+    <input type="text" id="itemToRemove">
+    <button onclick="removeItem()">Eliminar del arreglo</button>
+    <p>(revisar la consola)</p>
+    <!-- Botón para obtener los títulos de los libros -->
+    <br>
+    <button onclick="showBookTitles()">Mostrar Títulos de Libros</button>
+    <br>
+    
+
+    <!-- Filtrado y Transformación -->
+    <label for="textoInvertir">Texto a invertir:</label>
+    <input type="text" id="textoInvertir">
+    <button onclick="reverseString()">Invertir</button>
+    <br>
+    <label for="numeros">Números (separados por comas):</label>
+    <input type="text" id="numeros">
+    <button onclick="getOdds()">Filtrar Impares</button>
+    <button onclick="duplicates()">Contar Duplicados</button>
+    <br>
+    <!-- Output P1 y P3 -->
+    <div id="resultado"></div>
+    <br>
+    <!-- Sección para mostrar los títulos de los libros -->
+    <div id="bookTitles"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generación y Búsqueda de Datos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .result {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Generación y Búsqueda de Datos</h1>
+
+    <!--1. Generación de Contraseñas-->
+    <h2>Generación de Contraseña</h2>
+    <label for="passwordLength">Longitud de la contraseña (mínimo 8 caracteres):</label>
+    <input type="number" id="passwordLength" min="8">
+    <button onclick="generarContrasena()">Generar Contraseña</button>
+    <p id="resultadoContrasena" class="result"></p>
+
+    <!-- 2. Búsqueda del Más Viejo  -->
+    <h2>Búsqueda de la Persona Más Vieja</h2>
+    <button onclick="buscarPersonaMasVieja()">Encontrar la Persona Más Vieja</button>
+    <p id="resultadoPersonaVieja" class="result"></p>
+
+
+
+<!-- 3. Creación de una Función Completa -->
+<h2>Programa Completo</h2>
+<h3>Datos de Entrada</h3>
+    <!-- Manipulación de Cadenas -->
+    <label for="cadenaTexto">Texto:</label>
+    <input type="text" id="cadenaTexto">
+    <label for="repeticiones">Repeticiones:</label>
+    <input type="number" id="repeticiones" min="1">
+    <br>
+    <!-- Operaciones Matemáticas -->
+    <label for="rangoA">Número A:</label>
+    <input type="number" id="rangoA">
+    <label for="rangoB">Número B:</label>
+    <input type="number" id="rangoB">
+    <br>
+    <!-- Conversión de Temperatura -->
+    <label for="tempCelsius">Temperatura en Celsius:</label>
+    <input type="number" id="tempCelsius">
+    <label for="tempFahrenheit">Temperatura en Fahrenheit:</label>
+    <input type="number" id="tempFahrenheit">
+    <br>
+    <!-- Año Bisiesto -->
+    <label for="año">Año:</label>
+    <input type="number" id="año">
+    <br>
+    <!-- Suma de Elementos del Arreglo -->
+    <label for="elementosArreglo">Introduce elementos separados por comas:</label>
+    <input type="text" id="elementosArreglo">
+    <br>
+    <!-- Generación de Contraseña -->
+    <label for="passwordLengthCompleteFuction">Longitud de la contraseña (mínimo 8 caracteres):</label>
+    <input type="number" id="passwordLengthCompleteFuction" min="8">
+    <br>
+    <!-- Persona Más Vieja -->
+    <label for="personas">Introduce personas (nombre y año de nacimiento) separados por comas (ej. Juan:1945, María:1960):</label>
+    <input type="text" id="personas">
+    <br>
+<button onclick="ejecutarProgramaCompleto()">Ejecutar Programa Completo</button>
+<p id="resultadoProgramaCompleto" class="result" style="background-color: rgb(177, 213, 249);"></p>
+
+<script src="script.js"></script>
+</body>
+</html>

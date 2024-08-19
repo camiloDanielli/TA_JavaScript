@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TA2</title>
+</head>
+<body>
+    <h1>Operaciones Matemáticas y Funciones de Conversión</h1>
+    <h2>Suma de Rango</h2>
+    <label for="rangoA">Número A:</label>
+    <input type="number" id="rangoA">
+    <label for="rangoB">Número B:</label>
+    <input type="number" id="rangoB">
+    <button onclick="mostrarSumaRango()">Calcular Suma</button>
+    <p id="resultadoSumaRango" class="result"></p>
+
+    <h2>Conversión de Temperatura</h2>
+    <label for="tempCelsius">Temperatura en Celsius:</label>
+    <input type="number" id="tempCelsius">
+    <button onclick="convertirAFahrenheit()">Convertir a Fahrenheit</button>
+    <p id="resultadoFahrenheit" class="result"></p>
+
+    <label for="tempFahrenheit">Temperatura en Fahrenheit:</label>
+    <input type="number" id="tempFahrenheit">
+    <button onclick="convertirACelsius()">Convertir a Celsius</button>
+    <p id="resultadoCelsius" class="result"></p>
+
+    <h2>Determinar de Año Bisiesto</h2>
+    <label for="año">Año:</label>
+    <input type="number" id="año">
+    <button onclick="esAñoBisiesto()">Determinar si es Bisiesto</button>
+    <p id="resultadoAñoBisiesto" class="result"></p>
+
+    <h2>Sumar elementos de un arreglo</h2>
+    <label for="elementosArreglo">Introduce elementos separados por comas:</label>
+    <input type="text" id="elementosArreglo">
+    <button onclick="mostrarSumaArreglo()">Calcular Suma del Arreglo</button>
+    <p id="resultadoSumaArreglo" class="result"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
